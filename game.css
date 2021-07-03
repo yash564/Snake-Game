@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Press Start 2P", cursive;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.container img {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  height: 90vh;
+  width: 60vw;
+  background: linear-gradient(rgb(170, 236, 170), rgb(236, 236, 167));
+  position: absolute;
+  top: 5vh;
+  left: 15vh;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+/* .background img{
+    height: 100%;
+    width: 100%;
+    z-index: 0.5;
+} */
+
+.options {
+  height: 30vh;
+  width: 30vw;
+  /* background: crimson; */
+  position: absolute;
+  top: 5vh;
+  left: 70vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 23px;
+}
+
+.scores {
+  background: lightgray;
+  border: 1px solid;
+  padding: 5px;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.exit {
+  background: lightgray;
+  border: 1px solid;
+  padding: 5px;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.food {
+  background: linear-gradient(red, purple);
+  border: 0.25vmin solid black;
+  border-radius: 8px;
+}
+
+.head {
+  background: purple;
+  border: 0.25vmin solid white;
+  border-radius: 12px;
+}
+
+.snake {
+  background: linear-gradient(red, yellow);
+  border: 2px solid purple;
+  transform: scale(1.02);
+  border-radius: 9px;
+}
+
+.highscore-container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.highscore {
+  height: 40vh;
+  width: 30vw;
+  position: absolute;
+  top: calc(50% - 20vh);
+  left: calc(50% - 15vw);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close button {
+  height: 5vh;
+  width: 6vw;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/* .document {
+  height: 100vh;
+  width: 100vw;
+} */
+
+@media only screen and (max-width: 600px) {
+  .background {
+    height: 70vh;
+    width: 70vw;
+    position: absolute;
+    top: calc(50% - 44vh);
+    left: calc(50% - 35vw);
+  }
+
+  .options {
+    height: 20vh;
+    width: 30vw;
+    position: absolute;
+    top: 78vh;
+    left: calc(50% - 15vw);
+  }
+
+  .scores {
+    height: 4vh;
+    font-size: 15px;
+  }
+
+  .exit {
+    height: 4vh;
+    font-size: 15px;
+    width: 42vw;
+  }
+
+  .highscore {
+    width: 66vw;
+    height: 36vh;
+    position: absolute;
+    top: calc(50% - 18vh);
+    left: calc(50% - 33vw);
+    font-size: 11px;
+  }
+
+  .close button {
+    height: 4vh;
+    width: 15vw;
+  }
+}
