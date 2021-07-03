@@ -66,19 +66,20 @@ h1{
 @media only screen and (max-width: 600px) {
     
     .heading {
-      flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 100vw;
     }
 
     .button{
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .para{
-        font-size: 25px;
+        font-size: 23px;
     }
 
     .container img{
         height: 100%;
-        width: auto;
+        width:  100%
     }
 }
