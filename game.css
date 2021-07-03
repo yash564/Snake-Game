@@ -132,6 +132,11 @@ body {
   color: white;
 }
 
+.play-buttons div{
+    font-size: 50px;
+}
+
+
 /* .document {
   height: 100vh;
   width: 100vw;
