@@ -142,7 +142,7 @@ body {
     height: 70vh;
     width: 80vw;
     position: absolute;
-    top: calc(50% - 44vh);
+    top: calc(50% - 46vh);
     left: calc(50% - 40vw);
   }
   
@@ -193,7 +193,7 @@ body {
   }
   
   .play-buttons div{
-      font-size: 30px;
+      font-size: 32px;
       position: absolute;
   }
   
