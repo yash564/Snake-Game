@@ -60,7 +60,7 @@ function gameEngine() {
       let HighScorePopUp = document.createElement("div");
       HighScorePopUp.classList.add("highscore-container");
       HighScorePopUp.innerHTML = `<div class="highscore">
-                <div>Congratulations!!</div>
+                <div>Congratulations ${localStorage.getItem("Player")}!!</div>
                 <div>You Beat The High Score</div>
                 <div class="score">
                   <div>High Score:</div>

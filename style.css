@@ -21,14 +21,14 @@ body{
 .options{
     position: absolute;
     height:40vh;
-    width: 32vw;
+    width: 40vw;
     /* background: chocolate; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     top: calc( 50% - 20vh );
-    left: calc( 50% - 16vw );
+    left: calc( 50% - 20vw );
 }
 
 h1{
@@ -63,8 +63,46 @@ h1{
     font-size: 35px;
 }
 
+.hide{
+    display: none;
+}
+
+.details{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+label{
+    text-align: center;
+}
+
+.details input{
+    width: 100%;
+    text-align: center;
+    margin: 15px 0px;
+    outline: none;
+    padding:0.4rem;
+    background: rgb(236, 223, 223);
+    border: none;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 15px;
+}
+
 @media only screen and (max-width: 600px) {
-    
+
+    .options{
+        height: 30vh;
+        width: 80vw;
+        top: calc( 50% - 15vh );
+        left: calc( 50% - 40vw );
+    }
+
+    .details label{
+        font-size: 15px;
+    }
+
     .heading {
         flex-wrap: wrap;
         width: 100vw;
