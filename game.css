@@ -166,11 +166,11 @@ body {
   }
   
   .highscore {
-    width: 66vw;
+    width: 72vw;
     height: 36vh;
     position: absolute;
     top: calc(50% - 18vh);
-    left: calc(50% - 33vw);
+    left: calc(50% - 36vw);
     font-size: 11px;
   }
   
