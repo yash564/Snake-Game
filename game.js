@@ -137,8 +137,8 @@ if (highscore == null) {
 
 window.requestAnimationFrame(main);
 
-document.addEventListener("keydown", function (e) {
-  // musicSound.play();
+window.addEventListener("keydown", function (e) {
+  musicSound.play();
   directions = { x: 0, y: 1 };
   moveSound.play();
   switch (e.key) {
@@ -163,5 +163,37 @@ document.addEventListener("keydown", function (e) {
   }
 });
 
+let upButton=document.querySelector(".top-button");
+let leftButton=document.querySelector(".left-button");
+let rightButton=document.querySelector(".right-button");
+let bottomButton=document.querySelector(".bottom-button");
 
+if(window.innerWidth<600){
+    // directions = { x: 0, y: 1 };
+    // moveSound.play();
+    upButton.addEventListener("click",function(e){
+      moveSound.play();
+      musicSound.play();
+      directions.x = 0;
+      directions.y = -1;
+    });
+    leftButton.addEventListener("click",function(e){
+      moveSound.play();
+      musicSound.play();
+      directions.x = -1;
+      directions.y = 0;
+    });
+    rightButton.addEventListener("click",function(e){
+      moveSound.play();
+      musicSound.play();
+      directions.x = 1;
+      directions.y = 0;
+    });
+    bottomButton.addEventListener("click",function(e){
+      moveSound.play();
+      musicSound.play();
+      directions.x = 0;
+      directions.y = 1;
+    });
+}
 
