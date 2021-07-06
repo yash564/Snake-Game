@@ -138,6 +138,11 @@ body {
 
 
 @media only screen and (max-width: 600px) {
+  .document{
+    height: 100%;
+    width:100%;
+  }
+
   .background {
     height: 70vh;
     width: 80vw;

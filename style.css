@@ -83,11 +83,12 @@ label{
     margin: 15px 0px;
     outline: none;
     padding:0.4rem;
-    background: rgb(236, 223, 223);
-    border: none;
+    background: transparent;
+    /* border: none; */
     border-radius: 10px;
     font-family: 'Press Start 2P', cursive;
     font-size: 15px;
+    border: 1px solid black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -118,6 +119,7 @@ label{
 
     .container img{
         height: 100%;
-        width:  100%
+        width:  100%;
+        opacity:1;
     }
 }
