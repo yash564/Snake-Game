@@ -75,6 +75,7 @@ h1{
 
 label{
     text-align: center;
+    color: red;
 }
 
 .details input{
@@ -84,7 +85,6 @@ label{
     outline: none;
     padding:0.4rem;
     background: transparent;
-    /* border: none; */
     border-radius: 10px;
     font-family: 'Press Start 2P', cursive;
     font-size: 15px;
